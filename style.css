@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-nanum);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --primary: rgb(255, 240, 219);
+  --secondary: rgb(201, 66, 64);
+  --font-nanum: "Nanum Gothic Coding", monospace;
+}
+
+body {
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+#main {
+  height: auto;
+}
+
+/* Nav */
+.nav-item a {
+  color: var(--primary);
+}
+.nav-item > a:hover {
+  color: var(--secondary);
+  background-color: var(--primary);
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(255, 240, 219);
+  background-color: rgb(255, 240, 219);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: rgb(201, 66, 64);
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: rgb(90, 13, 11);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* Card Art */
+
+button {
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  background-color: transparent;
+  padding: 8px;
+  font-size: 20px;
+}
+
+button:hover{
+  background-color: var(--secondary);
+  color: var(--primary);
+}
+
+.modal-content{
+  background-color: var(--secondary);
+}
